@@ -1,0 +1,50 @@
+.carousel,swiper,.swiper-item,image {
+  width: 100%;
+  height: 300rpx;
+}
+
+.btn{
+  display: flex;
+  height: 80rpx;
+  margin: 40rpx 20rpx;
+}
+
+.btn input{
+  border: 2rpx solid black;
+  flex-grow:1;
+  height: 100%;
+  border-radius: 10rpx;
+  padding-left: 16rpx;
+  box-sizing: border-box;
+}
+
+.btn button{
+  flex: 1;
+  background: royalblue;
+}
+
+.link{
+  font-size: 80rpx;
+  font-weight: bold;
+  animation: move 10s linear infinite;
+  text-align: center;
+}
+
+@keyframes  move{
+  from{
+        color: orange;
+    }
+  to{
+      color: pink;
+  }
+}
+
+.paging {
+  width: 40%;
+  margin: 0 auto;
+  border: 2rpx solid black;
+}
+
+.paging button {
+  width: 100%;
+}
