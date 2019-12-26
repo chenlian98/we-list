@@ -1,3 +1,24 @@
 <view class="title">
   <text selectable="true">详情页</text>
 </view>
+<view>
+  <view class="weui-cell weui-cell_input">
+    <view wx:if="{{ !isEdit }}">{{ article.title }}</view>
+    <input wx:else bindinput="onInputChange"  data-type="title" value="{{article.title}}" placeholder="输入标题" />
+  </view>
+  <view class="weui-cell weui-cell_input">
+    <view wx:if="{{ !isEdit }}">{{ article.description }}</view>
+    <input wx:else bindinput="onInputChange" data-type="description" value="{{article.description}}"  placeholder="输入描述" />
+  </view>
+  <view>
+    <view wx:if="{{ !isEdit }}">{{ article.detail }}</view>
+    <textarea wx:else bindinput="onInputChange" id="detail" data-type="detail" value="{{article.detail}}" class="weui-input" placeholder="输入详情" />
+  </view>
+</view>
+<view class="btn">
+  <button bindtap="onEdit">
+    {{ isEdit ? '提交': '编辑' }}
+  </button>
+ <button bindtap="del">删除</button>
+</view>
+

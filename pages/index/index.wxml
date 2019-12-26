@@ -12,13 +12,14 @@
       </swiper>
 </view>
 <videw class="btn">
-  <input type="text"/>
-  <button>提交</button>
+  <input type="text" bindinput="onInputChange"/>
+  <button bindtap="increase">新建</button>
 </videw>
-<!--pages/detailing/detailing -->
-<view wx:for="{{items}}" wx:key="*this"  class="link">
-  <navigator url="/pages/detailing/detailing">{{index}}.{{item}}</navigator>
+<view  wx:for="{{list}}" wx:key="*this"  class="link">
+  <navigator url="/pages/detailing/detailing?objectId={{item.id}}">
+    {{index + 1 }}.{{item.title}}
+  </navigator>
 </view>
-<view class="paging">
-  <button>下一页></button>
+<view class="paging" bindtap="paging">
+  <button  bindtap="paging">下一页></button>
 </view>

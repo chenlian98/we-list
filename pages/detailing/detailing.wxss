@@ -1,5 +1,26 @@
-
 .title text {
   font-size: 60rpx;
-  margin-left: 100rpx;
+}
+
+view input {
+  padding-left: 10rpx;
+  border-bottom: 2rpx solid black;
+}
+
+textarea {
+  padding-left: 10rpx;
+  width: 100%;
+  border-bottom: solid 2rpx black;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rpx;
+}
+
+.btn button {
+  color: white;
+  background: orange;
 }

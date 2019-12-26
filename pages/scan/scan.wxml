@@ -1,0 +1,2 @@
+<button bindtap="scan" >扫一扫</button>
+<text>扫码</text>

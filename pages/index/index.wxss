@@ -23,11 +23,16 @@
   background: royalblue;
 }
 
-.link{
-  font-size: 80rpx;
+.link,navigator{
+  font-size: 60rpx;
   font-weight: bold;
-  animation: move 10s linear infinite;
-  text-align: center;
+  animation: move 5s linear infinite;
+  /*display: -webkit-box;*/
+  /*-webkit-box-orient: vertical;*/
+  /*-webkit-line-clamp: 3;*/
+  /*overflow: hidden;*/
+  /*height: 100rpx;*/
+  padding-left: 8rpx;
 }
 
 @keyframes  move{
@@ -35,7 +40,7 @@
         color: orange;
     }
   to{
-      color: pink;
+      color: black;
   }
 }
 

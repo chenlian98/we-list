@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/detailing/detailing",
-    "pages/logs/logs"
+    "pages/scan/scan",
+    "pages/qrcode/qrcode"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,6 +11,29 @@
     "navigationBarTextStyle":"black",
     "navigationBarTitleText":"todos",
     "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "selectedColor": "#FFD700",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"pages/icon/home.png",
+        "selectedIconPath":"pages/icon/home-blue.png"
+      },
+      {
+        "pagePath":"pages/qrcode/qrcode",
+        "text":"二维码",
+        "iconPath":"pages/icon/qr-code.png",
+        "selectedIconPath":"pages/icon/qr-code-blue.png"
+      },
+      {
+        "pagePath":"pages/scan/scan",
+        "text":"扫码",
+        "iconPath":"pages/icon/scan.png",
+        "selectedIconPath":"pages/icon/scan-blue.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
